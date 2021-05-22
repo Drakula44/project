@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstdlib>
 #include "test.h"
 
 using namespace std;
@@ -13,7 +14,8 @@ void triangle(int n)
     }
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    triangle(4);
+    int n = atoi(argv[1]);
+    triangle(n);
 }
